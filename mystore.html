@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Decenterland-MARKETDETAILS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/dc.css">
+</head>
+
+<body class="">
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false" onclick="myFunction()">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse w-100 justify-content-end collapse nav-mobile">
+                <div class="nav-bar">
+                    <div class="nav-left">
+                        <a href="#" class="nav-link active">
+                            Marketplace
+                        </a>
+                        <a href="#" class="nav-link">
+                            Builder
+                        </a>
+                        <a href="#" class="nav-link">
+                            Docs
+                        </a>
+                        <a href="#" class="nav-link">
+                            Events
+                        </a>
+                        <a href="#" class="nav-link">
+                            DAO
+                        </a>
+                        <a href="#" class="nav-link">
+                            Blog
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#" class="nav-link">
+                            Join Our Discord
+                        </a>
+                        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                            Start Exploring
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="nav-left">
+                            <a href="#" class="nav-link active">
+                                Marketplace
+                            </a>
+                            <a href="#" class="nav-link">
+                                Builder
+                            </a>
+                            <a href="#" class="nav-link">
+                                Docs
+                            </a>
+                            <a href="#" class="nav-link">
+                                Events
+                            </a>
+                            <a href="#" class="nav-link">
+                                DAO
+                            </a>
+                            <a href="#" class="nav-link">
+                                Blog
+                            </a>
+                        </div>
+                        <div class="join-d">
+                            <a href="#" class="nav-link">
+                                Join Our Discord
+                            </a>
+                            <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Start Exploring
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="marketplace scenes">
+        <section>
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>
+                        Market Place
+                    </h2>
+                </div>
+                <div class="decenterland-tab">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Scenes</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Land</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-name" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Names</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-collection" type="button" role="tab"
+                                aria-controls="pills-profile" aria-selected="false">Collections</button>
+                        </li>
+                    </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="mystore-wrapper">
+                                        <div class="mystore-head">
+                                            <h3>My scenes</h3>
+                                            <a href="#" class="round-btn" data-bs-toggle="modal"
+                                                data-bs-target="#create">
+                                                <img src="assets/images/+.png" data-bs-toggle="modal"
+                                                    data-bs-target="#createsceanes" class="plus" alt="">
+                                                Create
+                                            </a>
+
+                                        </div>
+                                        <div class="mystore-box">
+                                            <div class="mystore-land-box-wrapper">
+                                                <div class="mystore-land-box">
+                                                    <img src="assets/images/building1.png" class="building img-fluid"
+                                                        alt="">
+                                                </div>
+                                                <h2>A building </h2>
+                                                <p>34m * 33M - 4 Item</p>
+                                            </div>
+                                        </div>
+                                        <div class="mystore-head">
+                                            <h3>My Scenes Pool</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building1.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building2.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building3.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building1.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building2.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/building3.png"
+                                                                class="building img-fluid" alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="mystore-wrapper">
+                                        <div class="mystore-head">
+                                            <h3>My scenes</h3>
+                                            <a href="#" class="round-btn" data-bs-toggle="modal"
+                                                data-bs-target="#create">
+                                                <img src="assets/images/+.png" data-bs-toggle="modal"
+                                                    data-bs-target="#createsceanes" class="plus" alt="">
+                                                Create
+                                            </a>
+
+                                        </div>
+                                        <div class="mystore-box">
+                                            <div class="mystore-land-box-wrapper">
+                                                <div class="mystore-land-box">
+                                                    <img src="assets/images/myl1.png" class="building img-fluid" alt="">
+                                                </div>
+                                                <h2>A building </h2>
+                                                <p>34m * 33M - 4 Item</p>
+                                            </div>
+                                        </div>
+                                        <div class="mystore-head">
+                                            <h3>My Scenes Pool</h3>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl7.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl2.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl3.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl4.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl5.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 my-2">
+                                                <div class="mystore-box border-0">
+                                                    <div class="mystore-land-box-wrapper">
+                                                        <div class="mystore-land-box">
+                                                            <img src="assets/images/myl6.png" class="building img-fluid"
+                                                                alt="">
+                                                        </div>
+                                                        <h2>A building </h2>
+                                                        <p>34m * 33M - 4 Item</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-4">
+                                        <a href="#" class="primary-btn ">
+                                            View More
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-name" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="name-wrapper">
+                                        <div class="row">
+                                            <div class="col-lg-4 my-3">
+                                                <img src="assets/images/t1.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-4 my-3">
+                                                <img src="assets/images/t2.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-4 my-3">
+                                                <img src="assets/images/t3.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="col-lg-4 my-3">
+                                                <img src="assets/images/t4.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="">
+                                                    <h3>Claim a Unique Name</h3>
+                                                    <p>Unique names can be assigned to your avatar for use as an alias,
+                                                        or they
+                                                        can be assigned to parcels.
+
+                                                        Assigning a name to a parcel or estate allows you to create a
+                                                        unique
+                                                        URL, like https://name.dcl.eth, making it easy to send people to
+                                                        your
+                                                        LAND. When someone follows your new URL, they will be redirected
+                                                        to your
+                                                        LAND in Decentraland!
+
+                                                        Names are only available in Ethereum, and can only be claimed
+                                                        with
+                                                        Ethereum MANA </p>
+                                                    <div class="form-group">
+                                                        <label for="">
+                                                            Name
+                                                        </label>
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Your name goes Here">
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="" class="mb-0 mt-3">
+                                                            MANA APPROVED
+                                                        </label>
+                                                        <div class="toggle-pmg my-4">
+                                                            <div class="toggle-s">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" checked id="test"
+                                                                        value="supress">
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <p class="mt-2">Authorize the DCLController contract to operate
+                                                            MANA on your
+                                                            behalf
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="proc-ess">
+                                                    <a href="#" class="primary-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#convert">
+                                                        <img src="assets/images/centl.png" class="me-3" alt="">
+                                                        100 Climb
+                                                    </a>
+                                                    <a href="#" class="cancel-btn">
+                                                        Cancel
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="people-group">
+                                                    <img src="assets/images/people1.png" class="img-fluid" alt="">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-collection" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="openeditor-wrapper">
+                                        <div class="open-head">
+                                            <div class="op-plus-wrapper">
+                                                <a href="#" class="op-plus" data-bs-toggle="modal"
+                                                    data-bs-target="#assetfile">
+                                                    <img src="assets/images/op.png" alt="">
+                                                </a>
+                                                <a href="#" class="primary-btn" data-bs-toggle="modal"
+                                                    data-bs-target="#collection">
+                                                    Open Editor
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 my-4">
+                                                <div class="item-wrapper">
+                                                    <div class="item-border">
+                                                        <div class="parent">
+                                                            <div class="div1">
+                                                                <img src="assets/images/mp1.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div2">
+                                                                <img src="assets/images/mp2.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div3">
+                                                                <img src="assets/images/mp3.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div4">
+                                                                <img src="assets/images/mp4.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div5">
+                                                                <img src="assets/images/mp5.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drp-six">
+                                                        <div class="">
+                                                            <h2>@ the Sixers</h2>
+                                                            <h3>12 items</h3>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="assets/images/dot.png" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 my-4">
+                                                <div class="item-wrapper">
+                                                    <div class="item-border">
+                                                        <div class="parent">
+                                                            <div class="div1">
+                                                                <img src="assets/images/mp1.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div2">
+                                                                <img src="assets/images/mp2.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div3">
+                                                                <img src="assets/images/mp3.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div4">
+                                                                <img src="assets/images/mp4.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div5">
+                                                                <img src="assets/images/mp5.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drp-six">
+                                                        <div class="">
+                                                            <h2>@ the Sixers</h2>
+                                                            <h3>12 items</h3>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="assets/images/dot.png" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 my-4">
+                                                <div class="item-wrapper">
+                                                    <div class="item-border">
+                                                        <div class="parent">
+                                                            <div class="div1">
+                                                                <img src="assets/images/mp1.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div2">
+                                                                <img src="assets/images/mp2.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div3">
+                                                                <img src="assets/images/mp3.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div4">
+                                                                <img src="assets/images/mp4.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div5">
+                                                                <img src="assets/images/mp5.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drp-six">
+                                                        <div class="">
+                                                            <h2>@ the Sixers</h2>
+                                                            <h3>12 items</h3>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="assets/images/dot.png" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 my-4">
+                                                <div class="item-wrapper">
+                                                    <div class="item-border">
+                                                        <div class="parent">
+                                                            <div class="div1">
+                                                                <img src="assets/images/mp1.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div2">
+                                                                <img src="assets/images/mp2.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div3">
+                                                                <img src="assets/images/mp3.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div4">
+                                                                <img src="assets/images/mp4.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div5">
+                                                                <img src="assets/images/mp5.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drp-six">
+                                                        <div class="">
+                                                            <h2>@ the Sixers</h2>
+                                                            <h3>12 items</h3>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="assets/images/dot.png" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 my-4">
+                                                <div class="item-wrapper">
+                                                    <div class="item-border">
+                                                        <div class="parent">
+                                                            <div class="div1">
+                                                                <img src="assets/images/mp1.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div2">
+                                                                <img src="assets/images/mp2.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div3">
+                                                                <img src="assets/images/mp3.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div4">
+                                                                <img src="assets/images/mp4.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="div5">
+                                                                <img src="assets/images/mp5.png" class="img-fluid"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="drp-six">
+                                                        <div class="">
+                                                            <h2>@ the Sixers</h2>
+                                                            <h3>12 items</h3>
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <img src="assets/images/dot.png" alt="">
+                                                            </button>
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2022 Decentraland</p>
+    </footer>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="assets/js/dc.js"></script>
+
+    <!-- Modal -->
+    <!--SCEANES Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="create" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Create Scene</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Set a name & a description for your scene</h3>
+                        <form action="" class="modal-form text-start">
+                            <div class="form-group mb-4 mt-2">
+                                <label for="">
+                                    Name
+                                </label>
+                                <input type="text" class="form-control mt-3" placeholder=" Name">
+                            </div>
+                            <div class="form-group mb-4 mt-2">
+                                <label for="">
+                                    Description
+                                </label>
+                                <input type="text" class="form-control mt-3" placeholder="Say Somethings">
+                            </div>
+                        </form>
+
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                            <a href="#" class="cancel-btn">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CREATE SCEANES Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="createsceanes" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Create Scene</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Set a size of your new Scene</h3>
+                        <div class="sceane-grid flex-wrap flex-lg-nowrap">
+                            <div class="grid-boxes">
+                                <div class="grid-box">
+                                </div>
+                                <div class="grid-box">
+                                </div>
+                                <div class="grid-box">
+                                </div>
+                                <div class="grid-box">
+                                </div>
+                            </div>
+                            <form action="" class="create-form text-start">
+                                <div class="form-group ">
+                                    <label for="">
+                                        Row
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="2">
+                                </div>
+                                <div class="">
+                                    <img src="assets/images/x.png" class="mt-5" alt="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">
+                                        Columns
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="2">
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="proc-ess flex-wrap">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                            <a href="#" class="cancel-btn">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Asset File  Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="assetfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">New Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Drag Your Asset File Here in</h3>
+                        <div class="row justify-content-center py-3 ">
+                            <div class="col-10 file-1 ">
+                                <input type="file" class="upload" id="upload-btn-2">
+                                <label class="file-upload-1 text-center" for="upload-btn-2">
+                                    <span> <img src="./assets/images/uploa.png" alt="">
+                                        <div class="mt-3 xxxx-t">
+                                            ZIP , GLTF, GLB, PNG
+                                        </div>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--New Collection Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="collection" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">New Collection</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Set a name & a description for your scene</h3>
+
+                        <form action="" class="modal-form text-start">
+                            <div class="form-group mb-4 mt-2">
+                                <label for="">
+                                    Scene
+                                </label>
+                                <input type="text" class="form-control mt-3" placeholder="My Collection">
+                                <small>The name can be 32 characters at most</small>
+                            </div>
+
+                        </form>
+
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#nameitem">
+                                Proceed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Name Item Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="nameitem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Name Item</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Select the body shape for your item</h3>
+                        <img src="assets/images/horse.png" class="img-fluid" alt="">
+                        <form action="" class="modal-form  activity text-start">
+                            <div class="form-group mb-4 mt-2">
+                                <label for="">
+                                    Enter a name for your item
+                                </label>
+                                <input type="text" class="form-control mt-3" placeholder="My Collection">
+                              
+                            </div>
+                            <div class="form-group my-2">
+                                <label for="" class="m-2">
+                                    How rate is this item ?
+                                </label>
+                                <select id="inputState" class="form-control custom-select">
+                                    <option selected="" disabled="" hidden="">Select
+                                    </option>
+                                    <option> Platform</option>
+                                    <option>Ectform</option>
+                                </select>
+                            </div>    
+                            <div class="form-group my-2">
+                                <label for="" class="m-2">
+                                    What the category of this Item ?
+                                </label>
+                                <select id="inputState" class="form-control custom-select">
+                                    <option selected="" disabled="" hidden="">Select
+                                    </option>
+                                    <option> Platform</option>
+                                    <option>Ectform</option>
+                                </select>
+                            </div>                       
+                        </form>
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

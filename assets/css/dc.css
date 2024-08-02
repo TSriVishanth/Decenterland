@@ -1,0 +1,2418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-synthesis: weight style small-caps;
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("Poppins-Thin.eot");
+  src: url("Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("Poppins-Thin.svg#Poppins-Thin") format("svg"), url("Poppins-Thin.ttf") format("truetype"), url("Poppins-Thin.woff") format("woff"), url("Poppins-Thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Play";
+  src: url("fonts/Play-Regular.eot");
+  src: url("fonts/Play-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Play-Regular.woff2") format("woff2"), url("fonts/Play-Regular.woff") format("woff"), url("fonts/Play-Regular.ttf") format("truetype"), url("fonts/Play-Regular.svg#Play-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Play";
+  src: url("fonts/Play-Bold.eot");
+  src: url("fonts/Play-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Play-Bold.woff2") format("woff2"), url("fonts/Play-Bold.woff") format("woff"), url("fonts/Play-Bold.ttf") format("truetype"), url("fonts/Play-Bold.svg#Play-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Black.eot");
+  src: url("fonts/Poppins-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Black.woff2") format("woff2"), url("fonts/Poppins-Black.woff") format("woff"), url("fonts/Poppins-Black.ttf") format("truetype"), url("fonts/Poppins-Black.svg#Poppins-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.eot");
+  src: url("fonts/Poppins-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Bold.woff2") format("woff2"), url("fonts/Poppins-Bold.woff") format("woff"), url("fonts/Poppins-Bold.ttf") format("truetype"), url("fonts/Poppins-Bold.svg#Poppins-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-ExtraBold.eot");
+  src: url("fonts/Poppins-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-ExtraBold.woff2") format("woff2"), url("fonts/Poppins-ExtraBold.woff") format("woff"), url("fonts/Poppins-ExtraBold.ttf") format("truetype"), url("fonts/Poppins-ExtraBold.svg#Poppins-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Thin.eot");
+  src: url("fonts/Poppins-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Thin.woff2") format("woff2"), url("fonts/Poppins-Thin.woff") format("woff"), url("fonts/Poppins-Thin.ttf") format("truetype"), url("fonts/Poppins-Thin.svg#Poppins-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Medium.eot");
+  src: url("fonts/Poppins-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Medium.woff2") format("woff2"), url("fonts/Poppins-Medium.woff") format("woff"), url("fonts/Poppins-Medium.ttf") format("truetype"), url("fonts/Poppins-Medium.svg#Poppins-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Light.eot");
+  src: url("fonts/Poppins-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Light.woff2") format("woff2"), url("fonts/Poppins-Light.woff") format("woff"), url("fonts/Poppins-Light.ttf") format("truetype"), url("fonts/Poppins-Light.svg#Poppins-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.eot");
+  src: url("fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-Regular.woff2") format("woff2"), url("fonts/Poppins-Regular.woff") format("woff"), url("fonts/Poppins-Regular.ttf") format("truetype"), url("fonts/Poppins-Regular.svg#Poppins-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-SemiBold.eot");
+  src: url("fonts/Poppins-SemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-SemiBold.woff2") format("woff2"), url("fonts/Poppins-SemiBold.woff") format("woff"), url("fonts/Poppins-SemiBold.ttf") format("truetype"), url("fonts/Poppins-SemiBold.svg#Poppins-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-ExtraLight.eot");
+  src: url("fonts/Poppins-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/Poppins-ExtraLight.woff2") format("woff2"), url("fonts/Poppins-ExtraLight.woff") format("woff"), url("fonts/Poppins-ExtraLight.ttf") format("truetype"), url("fonts/Poppins-ExtraLight.svg#Poppins-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+/*|| Font Import css End ||*/
+/*|| Common Css ||*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** Common Styles **/
+.cal, .marketplace {
+  min-height: calc(100vh - 90px);
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.flex-d, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper, .sidebar .primary-sidebar .btn div, .marketplace.scenes .decenterland-tab .land-wrapper .land-head .left-head, .marketplace.scenes .decenterland-tab .land-wrapper .land-head, .marketplace.scenes .decenterland-tab .bidsreceived-wrapper .bid-box-wrapper, .marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six, .marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head, .marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper, .token .token-wrapper .token-bg, .marketplace .nft-details-wrapper .nft-details .price-bg .in-price, .marketplace .nft-details-wrapper .nft-details .price-bg, .marketplace .nft-details-wrapper .nft-details, .marketplace .market-box-wrapper .market-box .desc-cent, .marketplace .market-box-heading, .index-form .form-group, .letter-pad .letter-pad-bg, .blog .contact-us .call, .blog .contact-us, .blog .blog-wrapper .blog-box, .blog .blog-wrapper, .trade .apparel, header nav div.nav-bar, header nav .nav-logo a.navbar-brand div, .toggle-pmg .toggle-s {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-a, .main-grid .land-wrapper .collection-wrapper .shazam, .file-1, .marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head .op-plus-wrapper .op-plus, .marketplace.scenes .decenterland-tab .name-wrapper .people-group, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess, .marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper .mystore-land-box, .marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head .round-btn img, .marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head .round-btn, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .grid-boxes, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess, .token .token-wrapper .token-bg .proc-ess .cancel-btn, .token .token-wrapper .token-bg .proc-ess, .pagination a.mover, .pagination, .marketplace .nft-details-wrapper .nft-bot .avatr, .marketplace .nft-details-wrapper .nft-bot .avatr-s, .marketplace .nft-details-wrapper .nft-bot, .marketplace .market-box-wrapper .market-box .desc-cent .cobalt-tnb a, .marketplace .market-box-wrapper .market-box .desc-cent .cobalt-tnb, .marketplace .market-box-wrapper .market-box .nft-txt, .marketplace .market-box-wrapper .market-box .nft-src, .marketplace .market-box-heading .v-all, .marketplace .market-banner .banner-heading, .marketplace .market-banner, .aboutBG, .trade, .create, .secpeople .people-bg, .secpeople, header nav div.nav-bar div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-trun, .marketplace .market-box-wrapper .market-box .desc-cent h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+svg {
+  max-width: 100%;
+}
+
+button:focus,
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-close {
+  background-image: none;
+  opacity: 1;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card {
+  background: transparent;
+}
+
+small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #706C97;
+}
+
+/* toggle */
+.toggle-pmg .toggle-s .slider:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: -1px;
+  transition: 0.4s;
+  width: 12px;
+  height: 12px;
+  background: #110F26;
+  border-radius: 45px;
+}
+
+.toggle-pmg .toggle-s input:checked + .slider:before {
+  transform: translateX(10px);
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background: linear-gradient(360deg, #0066FF 0%, #609FFF 100%);
+  left: -2px;
+  top: 2px;
+}
+
+input:checked + .slider {
+  background: #110F26 !important;
+  border: 1px solid transparent !important;
+}
+
+.toggle-pmg .toggle-s .switch {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 12px;
+  margin-bottom: 0;
+}
+.toggle-pmg .toggle-s .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-pmg .toggle-s .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+  border: 1px solid transparent;
+  border-radius: 45px;
+}
+.toggle-pmg .toggle-s .slider.round {
+  border-radius: 34px;
+}
+.toggle-pmg .toggle-s .slider:before {
+  border-radius: 50%;
+}
+
+/*checkbox css start*/
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=radio]:checked + label,
+[type=radio]:not(:checked) + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #D81255;
+}
+
+[type=radio]:not(:checked) + label {
+  color: #111011;
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #E4E5E7;
+  background: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  content: "";
+  background: #DC105B;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+[type=radio]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type=radio]:checked + label:after {
+  opacity: 1;
+  transform: scale(1) translate(0px, 0px);
+}
+
+[type=radio]:checked + label:before,
+[type=radio]:not(:checked) + label:before {
+  border-radius: 30px;
+}
+
+[type=radio]:checked + label:after,
+[type=radio]:not(:checked) + label:after {
+  border-radius: 30px;
+}
+
+@media (min-width: 1400px) {
+  .container.container-1260,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1390px;
+  }
+}
+button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.primary-btn, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover,
+.secondary-btn:hover,
+.bid-btn:hover {
+  min-width: 152px;
+  height: 43px;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  transition: all 0.6s ease-in-out;
+}
+.primary-btn:active, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:active:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:active:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:active:hover, .token .token-wrapper .token-bg .proc-ess .cancel-btn:active:hover,
+.secondary-btn:hover:active,
+.bid-btn:hover:active {
+  background: rgb(255, 150, 23);
+}
+
+.primary-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover,
+.secondary-btn {
+  min-width: 152px;
+  height: 43px;
+  background: linear-gradient(180deg, #F6B81E -11.67%, #ED442A 87.71%);
+  padding: 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-size: 400% 400%;
+  border-radius: 50px;
+  transition: transform 0.1s linear, background-color 0.25s linear, color 0.25s linear;
+  animation: movebg 2s ease infinite;
+}
+@keyframes movebg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}
+.primary-btn:hover:active, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover:active, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover:active, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover:active, .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover:active,
+.secondary-btn:active {
+  background: rgb(255, 150, 23);
+}
+
+.bid-btn {
+  min-width: 152px;
+  height: 43px;
+  background: #110F26;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.Grd-Btn {
+  position: relative;
+  min-width: 152px;
+  height: 43px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.Grd-Btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 2px;
+  background-color: transparent;
+  background: linear-gradient(200deg, #F4A320, #ED442A);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+.Grd-Btn:hover::before {
+  background: linear-gradient(350deg, #ED442A, #F4A320) !important;
+  background-color: transparent;
+}
+
+.box {
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(360deg);
+  }
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  75% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+.boxm, .marketplace .market-banner:hover {
+  position: relative;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    filter: hue-rotate(180deg);
+  }
+  50% {
+    filter: hue-rotate(0deg);
+  }
+  75% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+.heading h1 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(45px, 5vw, 64px);
+  line-height: 74px;
+  color: #FFFFFF;
+}
+.heading h2 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(25px, 5vw, 46px);
+  color: #FFFFFF;
+}
+.heading h3 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(30px, 5vw, 56px);
+  color: #FFFFFF;
+}
+.heading h5 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 29px;
+  color: #FFFFFF;
+}
+.heading h6 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: rgb(0, 164, 161);
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 2px;
+  animation: explorebg 2s ease infinite;
+  -webkit-animation: explorebg 2s ease infinite;
+  -moz-animation: explorebg 2s ease infinite;
+}
+.heading h6:hover {
+  background: linear-gradient(180deg, #F6B81E -11.67%, #ED442A 87.71%);
+  transition: transform 0.1s linear, background-color 0.25s linear, color 0.25s linear;
+}
+@keyframes explorebg {
+  0% {
+    background-position: 0% 83%;
+  }
+  50% {
+    background-position: 100% 18%;
+  }
+  100% {
+    background-position: 0% 83%;
+  }
+}
+.heading p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #CECECE;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: transparent;
+}
+header.header-fixed {
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  transition: all ease 0.9s;
+  width: 100%;
+  z-index: 20;
+}
+header.header-bg {
+  background-color: #00002e;
+  box-shadow: 0px 1px 1px #ef5d29;
+}
+header.header-top {
+  transform: translateY(-160px);
+  background-color: #111011;
+  box-shadow: 0px 1px 1px #ef5d29;
+}
+header.scroll-up {
+  transform: translateY(0px);
+}
+header nav {
+  position: relative;
+}
+header nav .nav-logo {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+}
+@media (max-width: 991px) {
+  header nav .nav-logo {
+    width: 25px;
+    transition: all 0.8s ease-out;
+  }
+}
+header nav .nav-logo a.navbar-brand div {
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+header nav .nav-logo a.navbar-brand div img {
+  position: absolute;
+  top: 0;
+}
+header nav .nav-logo button {
+  margin-right: 15px;
+}
+header nav .side-b {
+  padding-left: 80px;
+}
+header nav .navbar-toggler {
+  margin-left: auto;
+}
+header nav div.nav-bar {
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  header nav div.nav-bar .join-d {
+    padding-bottom: 50px;
+  }
+  header nav div.nav-bar .join-d .nav-link {
+    width: 100%;
+    margin: 15px 0;
+    text-align: left;
+  }
+}
+header nav div.nav-bar div {
+  flex-wrap: wrap;
+}
+header nav div.nav-bar div.nav-left {
+  padding-left: 50px;
+}
+@media (max-width: 991px) {
+  header nav div.nav-bar div.nav-left {
+    padding-left: 0;
+  }
+  header nav div.nav-bar div.nav-left .nav-link {
+    width: 100%;
+    margin: 15px 0;
+    text-align: left;
+  }
+  header nav div.nav-bar div.nav-left .join-d .nav-link {
+    width: 100%;
+    margin: 15px 0;
+    text-align: left;
+  }
+}
+header nav div.nav-bar a.nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 5px;
+}
+header nav div.nav-bar a.nav-link:hover {
+  color: rgb(244, 162, 32);
+}
+header nav div.nav-bar a.nav-link.active {
+  color: rgb(244, 162, 32);
+}
+header nav div.nav-bar a.nav-link:active {
+  color: rgb(244, 162, 32);
+}
+header nav .canvas-pmg {
+  display: none;
+}
+header nav .canvas-pmg.offcanvas-start {
+  width: 270px;
+}
+
+.navbar-collapse {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+  header nav div.nav-bar {
+    display: block;
+    text-align: center;
+  }
+  header nav div.nav-bar .primary-btn, header nav div.nav-bar .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper header nav div.nav-bar .sec-btn:hover, header nav div.nav-bar .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess header nav div.nav-bar .cancel-btn:hover, header nav div.nav-bar .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess header nav div.nav-bar .cancel-btn:hover, header nav div.nav-bar .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess header nav div.nav-bar .cancel-btn:hover {
+    margin: 10px auto;
+  }
+  header nav .canvas-pmg {
+    display: block;
+    background-color: #111011;
+    box-shadow: #111011 0px 7px 29px 0px;
+    height: auto;
+  }
+  header nav .canvas-pmg .offcanvas-header {
+    justify-content: flex-end;
+  }
+  header nav .canvas-pmg .offcanvas-body {
+    height: 100vh;
+    background-color: #111011;
+    box-shadow: #111011 0px 7px 29px 0px;
+  }
+  header nav .canvas-pmg .offcanvas-body .nav-link.globe-bg {
+    margin: 0 auto;
+  }
+  header nav .canvas-pmg .offcanvas-body .input-group {
+    margin: 0 auto;
+  }
+  header nav .canvas-pmg .btn-close {
+    background: none;
+    border: none;
+    opacity: 1;
+  }
+  header nav .canvas-pmg .btn-close:focus {
+    box-shadow: none;
+  }
+  header nav .canvas-pmg i {
+    color: #F6B81E;
+  }
+}
+.banner {
+  background-image: url("../images/banbg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+@media (max-width: 991px) {
+  .banner {
+    background-size: 100% 100%;
+  }
+}
+.banner .banner-bg .r-h {
+  min-height: 670px;
+  align-items: center;
+}
+.banner .banner-bg .heading h1 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(45px, 5vw, 64px);
+  line-height: 74px;
+  color: #FFFFFF;
+  max-width: 605px;
+}
+.banner .banner-bg .heading p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #CECECE;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.banner .banner-bg .secondary-btn {
+  margin-top: 35px;
+}
+
+.secpeople {
+  min-height: 580px;
+}
+.secpeople .people-bg {
+  background-image: url("../images/peopleBG.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 580px;
+}
+
+.create {
+  background-image: url("../images/createbg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 545px;
+  padding: 15px;
+  margin: 25px 0;
+}
+.create .tina-section {
+  position: relative;
+}
+.create .tina-section .tina {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.create .tina-section .ydollar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.create .tina-section .bdollar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.trade {
+  min-height: 710px;
+  align-items: flex-start;
+  margin-top: 75px;
+  text-align: center;
+}
+.trade .heading p {
+  max-width: 1120px;
+  text-align: center;
+  margin: 0 auto;
+}
+.trade .apparel {
+  flex-wrap: wrap;
+  margin: 55px 0;
+}
+.trade .apparel .apparel-bg {
+  margin: 15px 0;
+  position: relative;
+}
+.trade .apparel .apparel-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 212px;
+  height: 212px;
+  background: radial-gradient(49.53% 49.53% at 52.83% 47.17%, rgba(43, 187, 240, 0.3) 23%, rgba(12, 9, 28, 0) 100%);
+  animation: explorebg 2s ease infinite;
+  z-index: -1;
+}
+
+.events .heading h3 {
+  text-align: center;
+}
+.events .heading p {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutBG {
+  background-image: url("../images/aboutbg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 651px;
+  align-items: flex-start;
+}
+
+.decenterland-tab {
+  margin-top: 30px;
+}
+.decenterland-tab .nav-pills {
+  justify-content: center;
+}
+.decenterland-tab .nav-pills .nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.decenterland-tab .nav-pills .nav-link.active {
+  color: rgb(244, 162, 32);
+  background-color: transparent;
+}
+.decenterland-tab .tab-content {
+  margin-top: 50px;
+}
+
+.blog .blog-wrapper {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.blog .blog-wrapper .blog-box {
+  flex-wrap: wrap;
+  max-width: 545px;
+  min-height: 226px;
+  background: #0A0916;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 55px;
+}
+.blog .blog-wrapper .blog-box img {
+  border-radius: 29px;
+  width: 180px;
+  height: 180px;
+  margin: 15px;
+}
+.blog .blog-wrapper .blog-box h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 28px;
+  max-width: 300px;
+}
+.blog .blog-wrapper .blog-box h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgb(206, 206, 206);
+  margin-left: 15px;
+}
+.blog .blog-wrapper .blog-box h5 span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(244, 162, 32);
+}
+.blog .contact-us {
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.blog .contact-us .call {
+  flex-wrap: wrap;
+}
+.blog .contact-us .call h3 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+}
+.blog .contact-us .call p {
+  max-width: 748px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(206, 206, 206);
+}
+
+.letter-pad {
+  margin-top: 80px;
+}
+.letter-pad .letter-pad-bg {
+  min-height: 255px;
+  background: #0A0916;
+  border-radius: 20px;
+  padding: 35px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.letter-pad .letter-pad-bg p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(206, 206, 206);
+  margin: 20px 0;
+  max-width: 430px;
+}
+.letter-pad .letter-pad-bg .update h3 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.index-form .form-group .form-control {
+  height: 43px;
+  background: #14132B;
+  border-radius: 50px;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  padding-left: 15px;
+}
+.index-form .form-group .form-control:focus {
+  box-shadow: none;
+}
+.index-form .form-group .form-control::-moz-placeholder {
+  color: #8E8D97;
+}
+.index-form .form-group .form-control::placeholder {
+  color: #8E8D97;
+}
+
+.home-bg footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  background-color: rgb(10, 9, 22);
+}
+
+.error-bg {
+  background-color: #06050E;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.error-bg img {
+  margin: 25px 0;
+}
+.error-bg .primary-btn, .error-bg .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .error-bg .sec-btn:hover, .error-bg .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .error-bg .cancel-btn:hover, .error-bg .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .error-bg .cancel-btn:hover, .error-bg .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess .error-bg .cancel-btn:hover {
+  width: 214px;
+}
+
+.marketplace {
+  margin-top: 120px;
+}
+.marketplace .market-banner {
+  background-image: linear-gradient(177.99deg, #A00F80 1.67%, rgba(194, 35, 220, 0) 30.55%), url("../images/marketplacebg.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: hard-light;
+  background-size: cover;
+  min-height: 350px;
+  justify-content: center;
+  transition: transform 0.1s linear, background-color 0.25s linear, color 0.25s linear;
+}
+.marketplace .market-banner:hover {
+  transition: transform 0.1s linear, background-color 0.25s linear, color 0.25s linear;
+}
+.marketplace .market-banner .banner-heading {
+  min-height: 329px;
+  flex-direction: column;
+}
+.marketplace .market-banner .banner-heading h2 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+.marketplace .market-banner .banner-heading p {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+.marketplace .market-box-heading {
+  margin-top: 90px;
+  border-bottom: 1px solid #131313;
+  padding-bottom: 20px;
+}
+.marketplace .market-box-heading h4 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.marketplace .market-box-heading .v-all {
+  text-decoration: none;
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 84px;
+  height: 23px;
+  left: 1373px;
+  top: 509px;
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+  border-radius: 50px;
+}
+.marketplace .market-box-heading .v-all:hover {
+  background: linear-gradient(180deg, #F6B81E -11.67%, #ED442A 87.71%);
+}
+.marketplace .market-box-wrapper .market-box .nft-src {
+  max-height: 293px;
+  min-width: 250px;
+  min-height: 185px;
+  border-radius: 18px;
+  background-color: rgb(255, 150, 23);
+}
+.marketplace .market-box-wrapper .market-box .nft-txt {
+  max-height: 293px;
+  min-width: 250px;
+  min-height: 185px;
+  border-radius: 18px;
+  background-color: rgb(255, 150, 23);
+  flex-direction: column;
+}
+.marketplace .market-box-wrapper .market-box .nft-txt p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #494949;
+}
+.marketplace .market-box-wrapper .market-box .nft-txt h3 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  color: rgb(0, 0, 0);
+}
+.marketplace .market-box-wrapper .market-box h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(0, 164, 161);
+}
+.marketplace .market-box-wrapper .market-box .desc-cent {
+  margin-top: 20px;
+}
+.marketplace .market-box-wrapper .market-box .desc-cent h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+}
+.marketplace .market-box-wrapper .market-box .desc-cent h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #F4A220;
+}
+.marketplace .market-box-wrapper .market-box .desc-cent .cobalt-btn a {
+  background-color: rgb(0, 164, 161);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+.marketplace .market-box-wrapper .market-box .desc-cent .cobalt-btn a:hover {
+  background-color: #d73d26;
+}
+.marketplace .market-box-wrapper .market-box .desc-cent .cobalt-tnb a {
+  text-decoration: none;
+  width: 28px;
+  height: 28px;
+  margin: 0 15px 0 0;
+  background: #161616;
+  border-radius: 50px;
+}
+.marketplace .nft-details-wrapper .nft-bot {
+  width: 84px;
+  height: 29px;
+  border-radius: 50px;
+  margin: 35px 0;
+}
+.marketplace .nft-details-wrapper .nft-bot .avatr-s {
+  background: #00A4A1;
+  width: 40px;
+  height: 29px;
+  border-radius: 14px 0px 0px 14px;
+}
+.marketplace .nft-details-wrapper .nft-bot .avatr-s:hover {
+  background: #91dfdd;
+}
+.marketplace .nft-details-wrapper .nft-bot .avatr {
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+  width: 40px;
+  height: 29px;
+  border-radius: 0px 14px 14px 0px;
+}
+.marketplace .nft-details-wrapper .nft-bot .avatr:hover {
+  background: #91dfdd;
+}
+.marketplace .nft-details-wrapper .nft-details {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.marketplace .nft-details-wrapper .nft-details .details {
+  margin: 15px 0;
+}
+.marketplace .nft-details-wrapper .nft-details .details h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn {
+  margin: 25px 0;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn a {
+  display: inline-block;
+  background-color: rgb(17, 15, 38);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 15px;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn a img {
+  margin-right: 10px;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn a:hover {
+  background-color: #d73d26;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn a.legend {
+  background-color: rgb(0, 164, 161);
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 15px;
+}
+.marketplace .nft-details-wrapper .nft-details .details .cobalt-btn a.legend:hover {
+  background-color: #d73d26;
+}
+.marketplace .nft-details-wrapper .nft-details .details h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+  margin: 20px 0;
+}
+.marketplace .nft-details-wrapper .nft-details .details h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.marketplace .nft-details-wrapper .nft-details .details .collect {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.marketplace .nft-details-wrapper .nft-details .details .collect h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(244, 162, 32);
+  margin-right: 15px;
+}
+.marketplace .nft-details-wrapper .nft-details .details .collect h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin: 15px 0;
+}
+.marketplace .nft-details-wrapper .nft-details .details .collect h4 img {
+  margin-right: 15px;
+}
+.marketplace .nft-details-wrapper .nft-details .price-bg {
+  max-width: 384px;
+  min-width: 300px;
+  min-height: 181px;
+  border: 1px solid #232323;
+  border-radius: 24px;
+  padding: 25px;
+  flex-direction: column;
+  align-items: revert;
+}
+.marketplace .nft-details-wrapper .nft-details .price-bg .in-price h2 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(244, 162, 32);
+  min-width: 75px;
+}
+.marketplace .nft-details-wrapper .nft-details .price-bg .in-price h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(255, 255, 255);
+}
+
+.decenter-table h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.decenter-table table {
+  border: 1px solid #232323;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 25px;
+}
+.decenter-table table thead {
+  border-bottom: 1px solid #232323;
+}
+.decenter-table table thead tr th {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+}
+.decenter-table table thead tr th:nth-child(3) {
+  text-align: end;
+}
+.decenter-table table tbody::before {
+  line-height: 1em;
+  content: ".";
+  color: transparent;
+  display: block;
+}
+.decenter-table table tbody tr td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+}
+.decenter-table table tbody tr td:nth-child(3) {
+  text-align: end;
+}
+
+.pagination {
+  justify-content: flex-end;
+}
+.pagination a {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.pagination a.mover {
+  width: 14px;
+  height: 21px;
+  background: #0A0916;
+}
+.pagination a.mover:hover {
+  background-color: rgb(255, 150, 23);
+}
+
+.token .market-banner {
+  background-image: linear-gradient(177.99deg, #65004f 1.67%, rgba(194, 35, 220, 0) 35.55%), url("../images/profilebox.png");
+  background-repeat: no-repeat;
+  mix-blend-mode: unset;
+  background-size: cover;
+  min-height: 300px !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+}
+.token .market-banner .profile-box-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.token .market-banner .profile-box-wrapper .profile {
+  width: 82px;
+  height: 82px;
+  border-radius: 50px;
+  margin-right: 30px;
+}
+.token .market-banner .profile-box-wrapper h4 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+}
+.token .market-banner .profile-box-wrapper h5 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.token .market-banner .profile-box-wrapper h6 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.token .market-banner .profile-box-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #EAEAEA;
+}
+.token .token-wrapper .token-bg {
+  max-width: 1122px;
+  height: 103px;
+  background: #0A0916;
+  margin: 25px auto;
+  padding: 25px 45px;
+  width: 100%;
+  border-radius: 20px;
+}
+.token .token-wrapper .token-bg h5 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.token .token-wrapper .token-bg h6 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.token .token-wrapper .token-bg .proc-ess {
+  flex-wrap: wrap;
+}
+.token .token-wrapper .token-bg .proc-ess .primary-btn, .token .token-wrapper .token-bg .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .token .token-wrapper .token-bg .proc-ess .sec-btn:hover, .token .token-wrapper .token-bg .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover {
+  width: 184px;
+  height: 43px;
+  margin: 15px;
+}
+.token .token-wrapper .token-bg .proc-ess .cancel-btn {
+  width: 184px;
+  height: 43px;
+  background: #000000;
+  border-radius: 100px;
+  text-decoration: none;
+  margin: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+}
+.decenterland-modal {
+  position: relative;
+}
+.decenterland-modal .modal {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.decenterland-modal .modal .modal-dialog {
+  max-width: 645px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content {
+  background: #110F26;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-header {
+  border: 0;
+  align-items: unset;
+  justify-content: center;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-header h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-header .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-header .btn-close:focus {
+  box-shadow: none;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body {
+  text-align: center;
+  padding: 0 40px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #CECECE;
+  margin: 15px 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #706C97;
+  max-width: 570px;
+  margin: 20px auto;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess {
+  margin: 20px auto;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .primary-btn, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .sec-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover {
+  width: 184px;
+  height: 43px;
+  margin: 15px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn {
+  width: 184px;
+  height: 43px;
+  background: #000000;
+  border-radius: 100px;
+  text-decoration: none;
+  margin: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #706C97;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .input-group-text {
+  background-color: transparent;
+  border: 1px solid #525252;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .input-group-text.input-left {
+  border-radius: 50px 0 0 50px;
+  border-right: 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .input-group-text.input-right {
+  border-radius: 0px 50px 50px 0px;
+  border-left: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .form-control {
+  height: 52px;
+  border: 1px solid #525252;
+  border-radius: 0px;
+  background-color: transparent;
+  border-left: 0;
+  border-right: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .form-control:focus {
+  box-shadow: none;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .form-control::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .input-group .form-control::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .form-group .form-control {
+  border: 1px solid #525252;
+  border-radius: 50px;
+  height: 52px;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .form-group .form-control:focus {
+  box-shadow: none;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .form-group .form-control::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .modal-form .form-group .form-control::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper {
+  padding-top: 25px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .nft-det {
+  border-radius: 20px;
+  max-width: 161px;
+  min-width: 161px;
+  min-height: 166px;
+  background-color: rgb(255, 150, 23);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(244, 162, 32);
+  margin-right: 15px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .form-control {
+  background: #000000;
+  border: 0;
+  border-radius: 0px 50px 50px 0px;
+  height: 43px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .form-control:focus {
+  box-shadow: none;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .form-control::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .form-control::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .input-group-text {
+  background: #000000;
+  height: 43px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .cyber-form .input-group-text.input-left {
+  border-radius: 50px 0 0 50px;
+  border: 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .price-l {
+  display: flex;
+  align-items: center;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .price-l h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(244, 162, 32);
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .nft-det-wrapper .price-l h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .grid-boxes {
+  flex-wrap: wrap;
+  max-width: 220px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .grid-boxes .grid-box {
+  width: 65px;
+  height: 62px;
+  background: #1F1C3E;
+  border-radius: 5px;
+  margin: 5px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group {
+  margin: 15px 20px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group label {
+  margin-bottom: 20px;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group .form-control {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #1f1c3e;
+  border-radius: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group .form-control:focus {
+  box-shadow: none;
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group .form-control::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.decenterland-modal .modal .modal-dialog .modal-content .modal-body .sceane-grid .create-form .form-group .form-control::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+
+.marketplace.scenes .decenterland-tab .nav-pills {
+  border-bottom: 1px solid #141414;
+}
+.marketplace.scenes .decenterland-tab .nav-pills li {
+  position: relative;
+}
+.marketplace.scenes .decenterland-tab .nav-pills li .nav-link {
+  position: relative;
+}
+.marketplace.scenes .decenterland-tab .nav-pills li .nav-link.active {
+  position: relative;
+}
+.marketplace.scenes .decenterland-tab .nav-pills li .nav-link.active::after {
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: rgb(244, 162, 32);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head .round-btn {
+  width: 105px;
+  height: 40px;
+  background: #090813;
+  border-radius: 50px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head .round-btn:hover img {
+  animation: infinite-spinning 5s infinite linear;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-head .round-btn img {
+  width: 21px;
+  height: 21px;
+  -o-object-fit: none;
+     object-fit: none;
+  background: linear-gradient(93.52deg, #F6B81E -11.67%, #ED442A 87.71%);
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box {
+  min-height: 408px;
+  border: 1px solid #232323;
+  border-radius: 18px;
+  margin: 20px 0;
+  padding: 25px 20px;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper .mystore-land-box {
+  max-width: 330px;
+  min-height: 270px;
+  background: #090813;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper .mystore-land-box .building {
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper .mystore-land-box .building:hover {
+  transform: scale(1.2);
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 21px;
+}
+.marketplace.scenes .decenterland-tab .mystore-wrapper .mystore-box .mystore-land-box-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  margin: 25px 0;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #CECECE;
+  line-height: 30px;
+  margin: 25px 0;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .form-control {
+  height: 44px;
+  border: 1px solid #525252;
+  border-radius: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  max-width: 381px;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .form-control:focus {
+  box-shadow: none;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .form-control::-moz-placeholder {
+  color: #868686;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .form-control::placeholder {
+  color: #868686;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .proc-ess {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .primary-btn, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .sec-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover {
+  width: 184px;
+  height: 43px;
+  margin: 15px;
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn {
+  width: 184px;
+  height: 43px;
+  background: #0A0916;
+  border-radius: 100px;
+  text-decoration: none;
+  margin: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+}
+.marketplace.scenes .decenterland-tab .name-wrapper .people-group {
+  background-image: url("../images/people1bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  min-height: 360px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head {
+  justify-content: end;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head .op-plus-wrapper {
+  display: flex;
+  align-items: center;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head .op-plus-wrapper .op-plus {
+  width: 32px;
+  height: 32px;
+  background: #0A0916;
+  border-radius: 50px;
+  margin: 0 15px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .open-head .op-plus-wrapper .op-plus:hover {
+  animation: infinite-spinning 5s infinite linear;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper {
+  max-width: 312px;
+  min-height: 183px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border {
+  border: 1px solid #232323;
+  border-radius: 18px;
+  padding: 15px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div1 {
+  grid-area: 1/1/3/2;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div1 img {
+  width: 120px;
+  height: 144px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div2 {
+  grid-area: 1/2/2/3;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div2 img {
+  width: 72px;
+  height: 63px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div3 {
+  grid-area: 2/2/3/3;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div3 img {
+  width: 72px;
+  height: 63px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div4 {
+  grid-area: 1/3/2/4;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div4 img {
+  width: 72px;
+  height: 63px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div5 {
+  grid-area: 2/3/3/4;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .item-border .parent .div5 img {
+  width: 72px;
+  height: 63px;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six {
+  margin: 15px 0;
+  align-items: flex-start;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(0, 164, 161);
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six .dropdown .btn:focus {
+  box-shadow: none;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six .dropdown .dropdown-menu {
+  background-color: #000000;
+  border: 1px solid #232323;
+  border-radius: 18px;
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six .dropdown .dropdown-menu .dropdown-item {
+  color: rgb(255, 255, 255);
+}
+.marketplace.scenes .decenterland-tab .openeditor-wrapper .item-wrapper .drp-six .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: rgb(255, 150, 23);
+  border-radius: 18px;
+}
+.marketplace.scenes .decenterland-tab .bidsreceived-wrapper {
+  margin: 15px 0;
+}
+.marketplace.scenes .decenterland-tab .bidsreceived-wrapper .bid-box-wrapper {
+  border: 1px solid #232323;
+  border-radius: 18px;
+  padding: 15px 25px;
+  margin: 15px 0;
+}
+.marketplace.scenes .decenterland-tab .bidsreceived-wrapper .bid-box-wrapper img {
+  margin-right: 15px;
+}
+.marketplace.scenes .decenterland-tab .bidsreceived-wrapper .bid-box-wrapper h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #8F8F8F;
+  margin-bottom: 5px;
+}
+.marketplace.scenes .decenterland-tab .bidsreceived-wrapper .bid-box-wrapper h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head {
+  flex-wrap: wrap;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group {
+  max-width: 303px;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group .form-control {
+  background: #110F26;
+  border-radius: 100px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 1px solid transparent;
+  height: 38px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group .form-control::-moz-placeholder {
+  color: #ACACAC;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group .form-control::placeholder {
+  color: #ACACAC;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group .form-control:focus {
+  box-shadow: none;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .input-group .input-group-text {
+  background: #110F26;
+  border-radius: 100px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid transparent;
+  height: 38px;
+  cursor: pointer;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .left-head {
+  flex-wrap: wrap;
+  max-width: 175px;
+  width: 100%;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .left-head h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper .land-head .left-head img {
+  width: 22px;
+  height: 22px;
+  background: #373737;
+  border-radius: 50px;
+  -o-object-fit: none;
+     object-fit: none;
+  padding: 2px;
+}
+.marketplace.scenes .decenterland-tab .land-wrapper img {
+  margin: 15px 0;
+}
+
+.file-1 {
+  background: #0B0916;
+  border-radius: 16px;
+  padding: 30px 40px;
+}
+.file-1 .xxxx-t {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(244, 162, 32);
+}
+.file-1 .upload {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+}
+.file-1 .file-upload-1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.activity .form-group {
+  width: 100%;
+}
+.activity .form-group .form-control.custom-select {
+  font-family: "Rubik", sans-serif;
+  background-image: url("../images/Arrow-down-2.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  min-height: 38px;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  background-color: #110F26;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+.activity .form-group .form-control.custom-select option {
+  background-color: #0A0916;
+  border: transparent;
+  min-height: 200px;
+  color: rgb(255, 255, 255);
+}
+.activity .form-group .form-control.custom-select:focus {
+  box-shadow: none;
+}
+
+.sidebaropen .sidebar {
+  position: absolute;
+  z-index: 11;
+}
+.sidebaropen .sidebar .primary-sidebar {
+  width: 300px;
+  min-height: 528px;
+  border: 1px solid #232323;
+  border-radius: 20px;
+  transition: all 0.8s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.sidebaropen .sidebar .secondary-sidebar {
+  width: 300px;
+  border: 1px solid #232323;
+  border-radius: 20px;
+  transition: all 0.8s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.sidebar {
+  position: absolute;
+  z-index: 11;
+}
+.sidebar .primary-sidebar {
+  width: 300px;
+  min-height: 528px;
+  border: 1px solid #232323;
+  background-color: #000000;
+  border-radius: 20px;
+  transition: all 0.8s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  padding: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+@media (max-width: 991px) {
+  .sidebar .primary-sidebar {
+    width: 0px;
+    transition: all 0.8s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+.sidebar .primary-sidebar .heading h4 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(0, 164, 161);
+}
+.sidebar .primary-sidebar .black-graybox {
+  min-height: 141px;
+  background: #0C0C0C;
+  border-radius: 9px;
+}
+.sidebar .primary-sidebar .black-graybox .store-h {
+  min-height: 65px;
+  padding: 10px 15px;
+}
+.sidebar .primary-sidebar .black-graybox .store-h:hover {
+  background-color: #070707;
+  border-radius: 9px;
+}
+.sidebar .primary-sidebar .black-graybox .store-h h3 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(244, 162, 32);
+}
+.sidebar .primary-sidebar .black-graybox .store-h p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.sidebar .primary-sidebar .btn {
+  width: 100%;
+}
+.sidebar .primary-sidebar .btn[aria-expanded=true] img {
+  transform: rotate(180deg);
+  transition: all 0.8s;
+}
+.sidebar .primary-sidebar .btn div {
+  width: 100%;
+}
+.sidebar .primary-sidebar .btn div h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.sidebar .primary-sidebar .btn div img {
+  display: block;
+  transition: all 0.8s;
+}
+.sidebar .primary-sidebar .btn:focus {
+  box-shadow: none;
+}
+.sidebar .primary-sidebar .collapse .card {
+  background-color: transparent;
+  padding-top: 0;
+}
+.sidebar .primary-sidebar .collapse .card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar .primary-sidebar .collapse .card ul li {
+  margin: 10px 0;
+}
+.sidebar .primary-sidebar .collapse .card ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8F8F8F;
+}
+.sidebar .primary-sidebar .collapse .card ul li a:hover {
+  color: rgb(244, 162, 32);
+}
+.sidebar .secondary-sidebar {
+  width: 300px;
+  border: 1px solid #232323;
+  background-color: #000000;
+  border-radius: 20px;
+  transition: all 0.8s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  white-space: nowrap;
+  padding: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+@media (max-width: 991px) {
+  .sidebar .secondary-sidebar {
+    width: 0px;
+    transition: all 0.8s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+.sidebar .secondary-sidebar .heading h4 {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(0, 164, 161);
+}
+.sidebar .secondary-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar .secondary-sidebar ul li {
+  margin: 10px 0;
+}
+.sidebar .secondary-sidebar ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8F8F8F;
+  text-decoration: none;
+}
+.sidebar .secondary-sidebar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.card {
+  background-color: transparent;
+  padding-top: 0;
+}
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.card ul li {
+  margin: 10px 0;
+}
+.card ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #8F8F8F;
+}
+
+.main-grid {
+  width: 100%;
+  padding-left: 350px;
+}
+@media (max-width: 991px) {
+  .main-grid {
+    padding-left: 0px;
+  }
+}
+.main-grid .land-wrapper .land-head {
+  max-width: unset;
+}
+.main-grid .land-wrapper .land-head .left-head {
+  max-width: 300px !important;
+}
+.main-grid .land-wrapper .land-head .left-head .form-group {
+  width: 130%;
+}
+.main-grid .land-wrapper .collection-wrapper {
+  border: 1px solid #232323;
+  border-radius: 20px;
+  padding: 15px;
+}
+.main-grid .land-wrapper .collection-wrapper label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACACAC;
+  margin: 10px 0;
+}
+.main-grid .land-wrapper .collection-wrapper .activity label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ACACAC;
+  margin-bottom: 10px;
+}
+.main-grid .land-wrapper .collection-wrapper .shazam {
+  width: 36px;
+  height: 36px;
+  background: #110F26;
+  border-radius: 50px;
+}
+.main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper {
+  flex-wrap: wrap;
+}
+.main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .collection-tags a {
+  font-family: "Play", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #110F26;
+  border-radius: 100px;
+  padding: 2px 10px;
+  margin: 5px;
+}
+.main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .collection-tags a:hover {
+  background-color: rgb(0, 164, 161);
+}
+.main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .primary-btn, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .token .token-wrapper .token-bg .proc-ess .cancel-btn:hover, .token .token-wrapper .token-bg .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .cancel-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .cancel-btn:hover, .decenterland-modal .modal .modal-dialog .modal-content .modal-body .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .cancel-btn:hover, .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .cancel-btn:hover, .marketplace.scenes .decenterland-tab .name-wrapper .proc-ess .main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .cancel-btn:hover {
+  min-width: 73px;
+  height: 23px;
+  padding: 5px 15px;
+}
+.main-grid .land-wrapper .collection-wrapper .collection-tags-wrapper .sec-btn {
+  font-family: "Play", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  min-width: 73px;
+  height: 23px;
+  padding: 5px 15px;
+  background: #110F26;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}/*# sourceMappingURL=dc.css.map */

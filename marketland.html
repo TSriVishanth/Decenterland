@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Decenterland-MARKETDETAILS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/dc.css">
+</head>
+
+<body class="">
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                    </div>
+                </a>
+            </div>
+            <button onclick="sideBar()" class="side-b">
+                <img src="assets/images/sidebarmenu.png" alt="" class="d-block d-lg-none">
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false" onclick="myFunction()">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse w-100 justify-content-end collapse nav-mobile">
+                <div class="nav-bar">
+                    <div class="nav-left">
+                        <a href="#" class="nav-link active">
+                            Marketplace
+                        </a>
+                        <a href="#" class="nav-link">
+                            Builder
+                        </a>
+                        <a href="#" class="nav-link">
+                            Docs
+                        </a>
+                        <a href="#" class="nav-link">
+                            Events
+                        </a>
+                        <a href="#" class="nav-link">
+                            DAO
+                        </a>
+                        <a href="#" class="nav-link">
+                            Blog
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#" class="nav-link">
+                            Join Our Discord
+                        </a>
+                        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                            Start Exploring
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="nav-left">
+                            <a href="#" class="nav-link active">
+                                Marketplace
+                            </a>
+                            <a href="#" class="nav-link">
+                                Builder
+                            </a>
+                            <a href="#" class="nav-link">
+                                Docs
+                            </a>
+                            <a href="#" class="nav-link">
+                                Events
+                            </a>
+                            <a href="#" class="nav-link">
+                                DAO
+                            </a>
+                            <a href="#" class="nav-link">
+                                Blog
+                            </a>
+                        </div>
+                        <div class="join-d">
+                            <a href="#" class="nav-link">
+                                Join Our Discord
+                            </a>
+                            <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Start Exploring
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="marketplace scenes">
+        <section id="sideBar">
+            <div class="container">
+                <div class="heading text-center">
+                    <h2>
+                        Market Place
+                    </h2>
+                </div>
+                <div class="decenterland-tab">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">Land</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Collectibles</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-name" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">My Store</button>
+                        </li>                       
+                    </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="land-wrapper">
+                                        <div class="land-head">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Search Land"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2"><img
+                                                        src="assets/images/Search.png" alt=""></span>
+                                            </div>
+                                            <div class="left-head">
+                                                <div class="toggle-pmg my-4">
+                                                    <div class="toggle-s">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked="" id="test" value="supress">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <h2>On Sale</h2>
+                                                <img src="assets/images/book.png" alt="">
+                                                <img src="assets/images/location.png" alt="">
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/graph.png" class="img-fluid w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="d-flex ">
+                                        <!-- SIDE-BAR -->
+                                        <div class="sidebar">
+                                            <div class="primary-sidebar">
+                                                <div class="heading">
+                                                    <h4>TYPE</h4>
+                                                </div>
+                                                <div class="black-graybox">
+                                                    <div class="store-h">
+                                                        <h3>Store</h3>
+                                                        <p>Items available for minting</p>
+                                                    </div>
+                                                    <div class="store-h">
+                                                        <h3>Listings</h3>
+                                                        <p>Items being resold</p>
+                                                    </div>
+                                                </div>
+                                                <div class="heading">
+                                                    <h4>CATEGORIES</h4>
+                                                </div>
+                                                <div class="">
+                                                    <button class="btn d-block " type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#weare" aria-expanded="true"
+                                                        aria-controls="collapseExample">
+                                                        <div class="">
+                                                            <h2> Wearables</h2>
+                                                            <img src="assets/images/Polygon.png" alt="">
+                                                        </div>
+                                                    </button>
+                                                    <div class="collapse show" id="weare">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li><a href="#">
+                                                                        Head
+                                                                    </a>
+                                                                </li>
+                                                                <li> <a href="#">
+                                                                        Upper Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Lower Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Feet
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Accessories
+                                                                    </a>
+                                                                </li>
+                                                                <li><a href="#">
+                                                                        Skins
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn d-block" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#emote" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        <div class="">
+                                                            <h2>Emotes</h2>
+                                                            <img src="assets/images/Polygon.png" alt="">
+                                                        </div>
+                                                    </button>
+                                                    <div class="collapse" id="emote">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li><a href="#">
+                                                                        Head
+                                                                    </a>
+                                                                </li>
+                                                                <li> <a href="#">
+                                                                        Upper Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Lower Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Feet
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Accessories
+                                                                    </a>
+                                                                </li>
+                                                                <li><a href="#">
+                                                                        Skins
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn d-block" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#name" aria-expanded="false"
+                                                        aria-controls="collapseExample">
+                                                        <div class="">
+                                                            <h2>Names</h2>
+                                                            <img src="assets/images/Polygon.png" alt="">
+                                                        </div>
+                                                    </button>
+                                                    <div class="collapse" id="name">
+                                                        <div class="card card-body">
+                                                            <ul>
+                                                                <li><a href="#">
+                                                                        Head
+                                                                    </a>
+                                                                </li>
+                                                                <li> <a href="#">
+                                                                        Upper Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Lower Body
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Feet
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Accessories
+                                                                    </a>
+                                                                </li>
+                                                                <li><a href="#">
+                                                                        Skins
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- MAIN-SECTION -->
+                                        <div class="main-grid">
+                                            <div class="land-wrapper">
+                                                <div class="land-head">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search Land" aria-label="Recipient's username"
+                                                            aria-describedby="basic-addon2">
+                                                        <span class="input-group-text" id="basic-addon2"><img
+                                                                src="assets/images/Search.png" alt=""></span>
+                                                    </div>
+                                                    <div class="left-head">
+                                                        <form action="" class="activity">
+                                                            <div class="form-group">
+                                                                <select id="inputState"
+                                                                    class="form-control custom-select">
+                                                                    <option selected="" disabled="" hidden="">Newest
+                                                                    </option>
+                                                                    <option> Platform</option>
+                                                                    <option>Ectform</option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                        <div class="toggle-pmg my-4">
+                                                            <div class="toggle-s">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" checked="" id="test"
+                                                                        value="supress">
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <h2>On Sale</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="collection-wrapper">
+                                                    <div class="row align-items-end">
+                                                        <div class="col-lg-4">
+                                                            <form action="" class="activity">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Collection
+                                                                    </label>
+                                                                    <select id="inputState"
+                                                                        class="form-control custom-select">
+                                                                        <option selected="" disabled="" hidden="">All
+                                                                            Collections
+                                                                        </option>
+                                                                        <option> Platform</option>
+                                                                        <option>Ectform</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <form action="" class="activity">
+                                                                <div class="form-group">
+                                                                    <label for="">
+                                                                        Network
+                                                                    </label>
+                                                                    <select id="inputState"
+                                                                        class="form-control custom-select">
+                                                                        <option selected="" disabled="" hidden="">All
+                                                                            Collections
+                                                                        </option>
+                                                                        <option> Platform</option>
+                                                                        <option>Ectform</option>
+                                                                    </select>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-lg-1">
+                                                            <div class="shazam">
+                                                                <img src="assets/images/shazam.png" alt="">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-12">
+
+                                                            <div class="collection-tags-wrapper w-100">
+                                                                <div class="collection-tags">
+                                                                    <label for="" class="d-block">
+                                                                        Rarity
+                                                                    </label>
+                                                                    <a href="#">
+                                                                        Common
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        UnCommon
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        Rare
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        Epic
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        Legendary
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        Mythic
+                                                                    </a>
+                                                                    <a href="#">
+                                                                        Unique
+                                                                    </a>
+                                                                </div>
+                                                                <div class="">
+                                                                    <label for="" class="d-block">
+                                                                        Gender
+                                                                    </label>
+                                                                    <button class="primary-btn">
+                                                                        Male
+                                                                    </button>
+                                                                    <button class="sec-btn">
+                                                                        Female
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="marketplace mt-2">
+                                                    <div class="market-box-wrapper">
+                                                        <div class="row mt-2">
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s1.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s2.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s3.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s4.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s1.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s2.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s3.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 my-2">
+                                                                <div class="market-box">
+                                                                    <img src="assets/images/s4.png"
+                                                                        class="img-fluid nft-src" alt="">
+                                                                    <div class="desc-cent ">
+                                                                        <h2>CyberBomber Mikoshi.....</h2>
+                                                                        <h6>
+                                                                            <img src="assets/images/cent.svg"
+                                                                                class="cent" alt="">
+                                                                            25
+                                                                        </h6>
+                                                                    </div>
+                                                                    <h5>Polygon</h5>
+                                                                    <div class="desc-cent ">
+                                                                        <div class="cobalt-btn">
+                                                                            <a href="#">
+                                                                                Legendary
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="cobalt-tnb">
+                                                                            <a href="#">
+                                                                                <img src="assets/images/shoe.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                            <a href="#" class="me-0">
+                                                                                <img src="assets/images/male.png"
+                                                                                    class="img-fluid" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-name" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <div class="d-flex ">
+                                        <!-- SIDE-BAR -->
+                                        <div class="sidebar">
+                                            <div class="secondary-sidebar">
+                                                <div class="heading">
+                                                    <h4>Asset</h4>
+                                                </div>
+
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"> Collections</a>
+                                                    </li>
+                                                    <li><a href="">Land
+                                                        </a></li>
+                                                    <li><a href="">Wearables
+                                                        </a></li>
+                                                    <li><a href="">Emotes
+                                                        </a></li>
+                                                    <li><a href="">Names
+                                                        </a></li>
+                                                </ul>
+
+
+                                            </div>
+                                            <div class="secondary-sidebar mt-4">
+                                                <div class="heading">
+                                                    <h4>Store</h4>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Onsales</a>
+                                                    </li>
+                                                    <li><a href="#">Sales
+                                                        </a></li>
+                                                    <li><a href="#">Wearables
+                                                        </a></li>
+                                                    <li><a href="#">Bids
+                                                        </a></li>
+                                                    <li><a href="#">Settings
+                                                        </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- MAIN-SECTION -->
+                                        <div class="main-grid">
+                                            <div class="land-wrapper">
+                                                <div class="land-head">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Search Land" aria-label="Recipient's username"
+                                                            aria-describedby="basic-addon2">
+                                                        <span class="input-group-text" id="basic-addon2"><img
+                                                                src="assets/images/Search.png" alt=""></span>
+                                                    </div>
+                                                    <div class="left-head">
+                                                        <form action="" class="activity">
+                                                            <div class="form-group">
+                                                                <select id="inputState"
+                                                                    class="form-control custom-select">
+                                                                    <option selected="" disabled="" hidden="">Newest
+                                                                    </option>
+                                                                    <option> Platform</option>
+                                                                    <option>Ectform</option>
+                                                                </select>
+                                                            </div>
+                                                        </form>
+                                                        <div class="toggle-pmg my-4">
+                                                            <div class="toggle-s">
+                                                                <label class="switch">
+                                                                    <input type="checkbox" checked="" id="test"
+                                                                        value="supress">
+                                                                    <span class="slider round"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <h2>On Sale</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="marketplace scenes mt-2">
+                                                    <div class="decenterland-tab ">
+                                                        <div class="openeditor-wrapper">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-6 my-4">
+                                                                    <div class="item-wrapper">
+                                                                        <div class="item-border">
+                                                                            <div class="parent">
+                                                                                <div class="div1">
+                                                                                    <img src="assets/images/mp1.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div2">
+                                                                                    <img src="assets/images/mp2.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div3">
+                                                                                    <img src="assets/images/mp3.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div4">
+                                                                                    <img src="assets/images/mp4.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div5">
+                                                                                    <img src="assets/images/mp5.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="drp-six">
+                                                                            <div class="">
+                                                                                <h2>@ the Sixers</h2>
+                                                                                <h3>12 items</h3>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="assets/images/dot.png" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item" href="#">Something else
+                                                                                            here</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 my-4">
+                                                                    <div class="item-wrapper">
+                                                                        <div class="item-border">
+                                                                            <div class="parent">
+                                                                                <div class="div1">
+                                                                                    <img src="assets/images/mp1.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div2">
+                                                                                    <img src="assets/images/mp2.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div3">
+                                                                                    <img src="assets/images/mp3.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div4">
+                                                                                    <img src="assets/images/mp4.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div5">
+                                                                                    <img src="assets/images/mp5.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="drp-six">
+                                                                            <div class="">
+                                                                                <h2>@ the Sixers</h2>
+                                                                                <h3>12 items</h3>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="assets/images/dot.png" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item" href="#">Something else
+                                                                                            here</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 my-4">
+                                                                    <div class="item-wrapper">
+                                                                        <div class="item-border">
+                                                                            <div class="parent">
+                                                                                <div class="div1">
+                                                                                    <img src="assets/images/mp1.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div2">
+                                                                                    <img src="assets/images/mp2.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div3">
+                                                                                    <img src="assets/images/mp3.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div4">
+                                                                                    <img src="assets/images/mp4.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div5">
+                                                                                    <img src="assets/images/mp5.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="drp-six">
+                                                                            <div class="">
+                                                                                <h2>@ the Sixers</h2>
+                                                                                <h3>12 items</h3>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="assets/images/dot.png" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item" href="#">Something else
+                                                                                            here</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 my-4">
+                                                                    <div class="item-wrapper">
+                                                                        <div class="item-border">
+                                                                            <div class="parent">
+                                                                                <div class="div1">
+                                                                                    <img src="assets/images/mp1.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div2">
+                                                                                    <img src="assets/images/mp2.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div3">
+                                                                                    <img src="assets/images/mp3.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div4">
+                                                                                    <img src="assets/images/mp4.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div5">
+                                                                                    <img src="assets/images/mp5.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="drp-six">
+                                                                            <div class="">
+                                                                                <h2>@ the Sixers</h2>
+                                                                                <h3>12 items</h3>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="assets/images/dot.png" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item" href="#">Something else
+                                                                                            here</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-6 my-4">
+                                                                    <div class="item-wrapper">
+                                                                        <div class="item-border">
+                                                                            <div class="parent">
+                                                                                <div class="div1">
+                                                                                    <img src="assets/images/mp1.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div2">
+                                                                                    <img src="assets/images/mp2.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div3">
+                                                                                    <img src="assets/images/mp3.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div4">
+                                                                                    <img src="assets/images/mp4.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                                <div class="div5">
+                                                                                    <img src="assets/images/mp5.png" class="img-fluid"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="drp-six">
+                                                                            <div class="">
+                                                                                <h2>@ the Sixers</h2>
+                                                                                <h3>12 items</h3>
+                                                                            </div>
+                                                                            <div class="dropdown">
+                                                                                <button class="btn " type="button" id="dropdownMenuButton1"
+                                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                    <img src="assets/images/dot.png" alt="">
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                                    <li><a class="dropdown-item" href="#">Another action</a>
+                                                                                    </li>
+                                                                                    <li><a class="dropdown-item" href="#">Something else
+                                                                                            here</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <a href="#" class="primary-btn">
+                                                                    Load More
+                                                                </a>
+                                                            </div>                                                          
+                                                        </div>  
+                                                    </div>                                                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2022 Decentraland</p>
+    </footer>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="assets/js/dc.js"></script>
+
+
+
+</body>

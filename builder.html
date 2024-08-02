@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Decenterland-BUILDER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- FAV-ICON -->
+    <link rel="icon" href="assets/images/fav.png" type="png">
+
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--FontAwsome Css-->
+    <link rel="stylesheet" href="assets/css/fontawesome-v6.1.1/css/all.css">
+
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--Custom Styles-->
+    <link rel="stylesheet" href="assets/css/dc.css">
+</head>
+
+<body class="">
+    <!-- header -->
+    <header class="header-fixed header">
+        <nav class="container navbar  navbar-expand-lg ">
+            <div class="nav-logo">
+                <a class="navbar-brand" href="index.html">
+                    <div class="">
+                        <img src="assets/images/logo.svg" class="logo" alt="">
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false" onclick="myFunction()">
+                <img src="assets/images/menu.png" alt="">
+            </button>
+            <div class="navbar-collapse w-100 justify-content-end collapse nav-mobile">
+                <div class="nav-bar">
+                    <div class="nav-left">
+                        <a href="#" class="nav-link active">
+                            Marketplace
+                        </a>
+                        <a href="#" class="nav-link">
+                            Builder
+                        </a>
+                        <a href="#" class="nav-link">
+                            Docs
+                        </a>
+                        <a href="#" class="nav-link">
+                            Events
+                        </a>
+                        <a href="#" class="nav-link">
+                            DAO
+                        </a>
+                        <a href="#" class="nav-link">
+                            Blog
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="#" class="nav-link">
+                            Join Our Discord
+                        </a>
+                        <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                            Start Exploring
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas canvas-pmg offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header"> <button type="button" class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="nav-bar">
+                        <div class="nav-left">
+                            <a href="#" class="nav-link active">
+                                Marketplace
+                            </a>
+                            <a href="#" class="nav-link">
+                                Builder
+                            </a>
+                            <a href="#" class="nav-link">
+                                Docs
+                            </a>
+                            <a href="#" class="nav-link">
+                                Events
+                            </a>
+                            <a href="#" class="nav-link">
+                                DAO
+                            </a>
+                            <a href="#" class="nav-link">
+                                Blog
+                            </a>
+                        </div>
+                        <div class="join-d">
+                            <a href="#" class="nav-link">
+                                Join Our Discord
+                            </a>
+                            <a href="#" class="secondary-btn" data-bs-toggle="modal" data-bs-target="#connectwallet">
+                                Start Exploring
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="marketplace token">
+        <section>
+            <div class="market-banner">
+                <div class="container">
+                    <div class="profile-box-wrapper">
+                        <div class="">
+                            <img src="assets/images/profile.png" class="profile" alt="">
+                        </div>
+                        <div class="">
+                            <h4>Johon son</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+
+                            <h5>Token</h5>
+                            <h6>
+                                <img src="assets/images/centl.png" alt="">
+                                0.234
+                            </h6>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="token-wrapper">
+                    <div class="token-bg">
+                        <div class="">
+                            <h5>Token</h5>
+                            <h6>
+                                <img src="assets/images/centl.png" alt="">
+                                0.234
+                            </h6>
+                        </div>
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                            <a href="#" class="cancel-btn " data-bs-toggle="modal" data-bs-target="#sendtoken">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2022 Decentraland</p>
+    </footer>
+    <!--Script files-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="assets/js/dc.js"></script>
+
+
+
+
+
+    <!-- Modal -->
+
+    <!-- Deposit Token Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="convert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Convert to Token</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Deposit Token</h3>
+                        <p>This operation consists of two steps.the first steps wont have any cost the second
+                            one will cost approximately $36.35 og gas fees on bilss.</p>
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                            <a href="#" class="cancel-btn">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Send Token Modal -->
+    <div class="decenterland-modal">
+        <div class="modal fade" id="sendtoken" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Send Token</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="assets/images/x.png" alt="">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Deposit Token</h3>
+                        <form action="" class="modal-form text-start">
+                            <label for="">
+                                Amount
+                            </label>
+                            <div class="input-group mb-4 mt-2">
+                                <span class="input-group-text input-left" id="basic-addon1">
+                                    <img src="assets/images/centl.png" alt="">
+                                </span>
+                                <input type="text" pla="" class="form-control" placeholder="0.324" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                                <span class="input-group-text input-right" id="basic-addon1">
+                                    MAX
+                                </span>
+                            </div>
+                            <div class="form-group mb-4 mt-2">
+                                <label for="">
+                                    Wallet
+                                </label>
+                                <input type="text" class="form-control mt-3" placeholder="00XX00023232.....................">
+                            </div>
+                        </form>
+                        <p>Remember any tranasction that moves asset within to or from the billss will
+                            incur gas fees</p>
+                        <div class="proc-ess">
+                            <a href="#" class="primary-btn" data-bs-toggle="modal" data-bs-target="#convert">
+                                Proceed
+                            </a>
+                            <a href="#" class="cancel-btn">
+                                Cancel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
